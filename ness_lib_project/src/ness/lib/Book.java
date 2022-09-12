@@ -1,6 +1,8 @@
 package ness.lib;
 
 
+import java.text.MessageFormat;
+
 public class Book {
      String name;
      String author;
@@ -34,6 +36,12 @@ public class Book {
 
     public void setPages(int pages) {
         this.pages = pages;
+    }
+
+    @Override
+    public String toString() {
+        return MessageFormat.format("name: {0}\nauthor: {1}\npages: {2}",
+                name,author,pages);
     }
 }
 
