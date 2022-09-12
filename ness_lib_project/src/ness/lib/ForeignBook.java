@@ -1,5 +1,7 @@
 package ness.lib;
 
+import java.text.MessageFormat;
+
 public class ForeignBook extends Book{
     String language;
     public ForeignBook(String name, String author, int pages) {
@@ -12,4 +14,9 @@ public class ForeignBook extends Book{
         this.language = language;
     }
 
+    @Override
+    public String toString() {
+        return MessageFormat.format("language: {0}\nname: {1}\nauthor: {2}\npages: {3}",
+                language,name,author,pages);
+    }
 }
