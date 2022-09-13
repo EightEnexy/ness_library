@@ -5,14 +5,14 @@ public class Subscriber {
     String lastName;
     SubscriberAddress address;
     String email;
-    int age;
+    Integer age;
 
     public Subscriber(String firstName, String lastName, SubscriberAddress address, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
         this.email = email;
-        this.age = 0;
+        this.age = null;
     }
 
     public Subscriber(String firstName, String lastName, SubscriberAddress address, String email, int age) {

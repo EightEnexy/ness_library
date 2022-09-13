@@ -11,7 +11,7 @@ public class ForeignBook extends Book{
 
     public ForeignBook(String name, String author, int pages, String language) {
         super(name, author, pages);
-        this.language = language;
+        this.language = language == null ? "English" : language;
     }
 
     @Override
