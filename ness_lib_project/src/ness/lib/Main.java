@@ -18,7 +18,7 @@ public class Main {
 
         Borrowing borrowing1 = new Borrowing(physics, johnCarrot, LocalDate.now());
 
-        borrowing1.setReturnDate(LocalDate.of(2022, 8,12));
+        borrowing1.setReturnDate(LocalDate.now());
 
         System.out.println(physics);
         System.out.println(slovak);
